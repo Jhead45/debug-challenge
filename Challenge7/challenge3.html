@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge 3</title>
+    <style>
+    * {
+        background-color: grey;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin-top: 30px;
+    }
+
+    input {
+        background-color: white;
+    }
+
+    .wholeRow {
+        grid-column: 1 / -1;
+    }
+
+    .btn {
+        width: 150px;
+        height: 30px;
+        background-color: rgb(37, 83, 235);
+        color: red;
+        
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>First name: <input type="text" id="myFirstName"></div>
+        <div>Last name: <input type="text" id="myLastName"></div>
+        <div>Number of burgers: <input type="number" id="qty"></div>
+        <div class="wholeRow">What Time would you like your lunch delivery?
+          <select id="theTime">
+            <option value="12">12</option>
+            <option value="1">1</option>
+            <option value="3">2</option>
+            <option value="2">3</option>
+          </select></div>
+        <div><button class="btn" onclick="orderNow()">Order Now</button></div>
+    </div>
+    <script src="challenge3.js">
+    
+    </script>
+</body>
+</html>
